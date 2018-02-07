@@ -18,8 +18,8 @@ namespace ConsoleApplication1
 
         public Bot()
         {
-            _path = @"C:\Users\Maciej\Desktop\bazaDanych.txt"; //Change to your destination or comment this and uncomment a line below
-            //_path = Environment.CurrentDirectory;
+            //_path = @"C:\Users\Maciej\Desktop\bazaDanych.txt";
+            _path = Environment.CurrentDirectory; //In case of trouble change it to your path
 
             if (!File.Exists(_path))
             {
